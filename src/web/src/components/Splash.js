@@ -33,14 +33,7 @@ const Splash = () => {
           ))}
         </div>
       </div>
-      <iframe
-        src="/star_wars_crawl.mp3"
-        allow="autoplay"
-        id="audio"
-        style={{ display: "none" }}
-        title="autoplay"
-      />
-      <audio preload="auto" autoPlay>
+      <audio autoPlay>
         <source src="/star_wars_crawl.mp3" type="audio/mp3" />
       </audio>
     </div>
