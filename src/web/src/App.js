@@ -5,8 +5,11 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import { RestLink } from "apollo-link-rest";
 import Home from "./components/Home";
 
+// TODO: this should be in a proper wrapper class
+const env = name => (window._env_ || process.env || {})[name];
+
 const restLink = new RestLink({
-  uri: process.env.REACT_APP_STAR_WARS_API_URL
+  uri: env("STAR_WARS_API_URL")
 });
 
 const client = new ApolloClient({

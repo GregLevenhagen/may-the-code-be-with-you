@@ -1,6 +1,6 @@
 This Skyline Technologies Star Wars App was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Gettig Started
+## Getting Started
 
 In the project directory:
 

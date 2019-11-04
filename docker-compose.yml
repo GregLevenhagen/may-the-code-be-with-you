@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  webapp:
+    image: skyline-starwars-webapp:latest
+    build:
+      context: ./src/web/
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - STAR_WARS_API_URL
