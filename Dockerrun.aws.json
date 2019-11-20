@@ -1,0 +1,16 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Authentication": {
+        "Bucket": "skylinedevops-azurecr",
+        "Key": ".dockercfg"
+      },
+      "Image": {
+        "Name": "skylinedevops.azurecr.io/skyline-starwars-webapp:production",
+        "Update": "true"
+      },
+    "Ports": [
+      {
+        "ContainerPort": "80"
+      }
+    ]
+  }
