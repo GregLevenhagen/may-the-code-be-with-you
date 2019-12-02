@@ -17,6 +17,7 @@ RUN npm run build
 ##################################################################
 FROM nginx:1.15-alpine
 EXPOSE 80
+EXPOSE 8080
 WORKDIR /usr/share/nginx/html
 
 # Installing dependencies

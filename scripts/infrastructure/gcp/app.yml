@@ -1,0 +1,14 @@
+service: skyline-starwars
+runtime: custom
+env: flex
+
+# minimal resources since this is not for a production environment
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+env_variables:
+  STAR_WARS_API_URL: https://swapi.co/api/
