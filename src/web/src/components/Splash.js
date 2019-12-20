@@ -23,11 +23,15 @@ const Splash = () => {
         <div id="content">
           <p id="title">Skyline Technologies Presents</p>
           <p id="subtitle">Episode 2019</p>
-          <p>[Insert Cool Verbiage Describing This Episode]</p>
+          <p>May the Cloud be with You!</p>
           <p>
-            [Currently Fetching people from the API and just showing them,
-            remove and/or change this]
+            Amazon, Azure and Google are vying for cloud dominance. Through working with all three, Skyline has developed multiple strategies for success that we will share, including:
+
+- Multi-Cloud, Hybrid, Cloud-Ready, Cloud-Native 
+- Containers and Serverless 
+- A Demo to deploy Containers to Multi-Cloud (React frontend, Python backend)
           </p>
+          <p>Starring</p>
           {results.map(r => (
             <p key={r.name}>{r.name}</p>
           ))}
